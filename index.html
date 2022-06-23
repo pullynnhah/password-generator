@@ -2,12 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <title>Password Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+      rel="stylesheet" />
 
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <header>
+        <h1>Generate a <br /><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+      </header>
+      <main>
+        <form>
+          <section>
+            <div>
+              <input type="number" id="length" value="16" min="8" max="32" />
+              <label for="length">Password Length</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="symbols" class="check" />
+              <label for="symbols">Symbols</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="numbers" class="check" />
+              <label for="numbers">Numbers</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="uppercase" class="check" />
+              <label for="uppercase">Uppercase letters</label>
+            </div>
+          </section>
+
+          <button>Generate passwords</button>
+        </form>
+        <section class="passwords">
+          <div class="password">
+            <p>>nfJjy!dDvR&ial</p>
+          </div>
+
+          <div class="password">
+            <p>>nfJjy!dDvR&ial</p>
+          </div>
+        </section>
+      </main>
+      <div class="copy hidden">
+        <p>Copied to clipboard!</p>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-# Project
+# Password Generator
 
 This is my second uploaded project from [Scrimba](https://scrimba.com)
 
